@@ -25,11 +25,21 @@
   color: rgb(131, 123, 123);
   font-family: Mulish;
 
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
   li {
+    display: flex;
+    align-items: center;
     list-style: none;
     font-size: 20px;
-    padding-top: 30px;
+    padding: 15px 0 15px 30px;
     
+  }
+  li:hover{
+    color:  rgb(180, 175, 175);
   }
 }
 svg{
