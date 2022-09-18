@@ -4,7 +4,9 @@ import classes from "./styles.module.scss"
 export const AppNavBar = () => {
     return (
         <nav className={classes.root}>
-            <div>Admin Dashboard</div>
+            <div className={classes.logoTop}>
+                Admin Dashboard
+            </div>
             <div className={classes.navList}>
                 <ul>
                     <li>Overview</li>
@@ -14,6 +16,7 @@ export const AppNavBar = () => {
                     <li>Agents</li>
                     <li>Articles</li>
                 </ul>
+            <div className={classes.lane} ></div>
                 <ul>
                     <li>Settings</li>
                     <li>Subscriptions</li>
