@@ -1,0 +1,17 @@
+.root {
+  width: 255px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: dimgrey;
+}
+
+.navList {
+  display: flex;
+  flex-direction: column;
+  color: white;
+
+  li {
+    list-style: none;
+  }
+}

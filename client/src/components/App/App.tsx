@@ -1,20 +1,28 @@
 import React from "react";
-import {BrowserRouter} from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 import {Layout} from "../Layout";
-import classes from "./styles.module.scss"
-import {AllRoutes} from "../../routes";
+import {PrivateRoutes} from "../../routes";
+
+import {FirebaseProvider} from "../../context/Firebase/Auth"
+import {PrivateRoute} from "../../Routes/PrivateRoute";
+import {routes} from "../../config/routes";
+import {Login} from "../../pages/Auth/Login";
 
 function App() {
     return (
-
-        <div className={classes.root}>
+        <FirebaseProvider>
             <BrowserRouter>
-                <Layout>
-                    <AllRoutes/>
-                </Layout>
-            </BrowserRouter>
+                <PrivateRoute>
+                    <Layout>
+                        <PrivateRoutes/>
+                    </Layout>
 
-        </div>
+                </PrivateRoute>
+                <Routes>
+                    <Route path={routes.auth.login} element={<Login/>}/>
+                </Routes>
+            </BrowserRouter>
+        </FirebaseProvider>
     );
 }
 

@@ -1,0 +1,31 @@
+.root {
+  display: flex;
+  padding: 10px 20px;
+}
+
+.pageName {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.headerTriggers {
+  display: flex;
+  margin-left: auto;
+}
+
+.userTrigger {
+  display: flex;
+  align-items: center;
+
+  margin-left: 20px;
+
+  span {
+    margin-right: 20px;
+  }
+
+  img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
+}
