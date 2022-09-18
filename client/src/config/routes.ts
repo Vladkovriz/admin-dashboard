@@ -1,5 +1,6 @@
 export const routes = {
     dashboard: "/",
+    overview: "/overview",
     profile: {
         root: "/profile",
         edit: "/profile/edit",
