@@ -19,16 +19,16 @@ export const AppNavBar = () => {
             <div className={classes.navList}>
                 <ul>
                     <li><Link to={routes.overview}>< IoIosPie/>Overview</Link></li>
-                    <li>< IoTicket/>Tickets</li>
-                    <li>< BsLightbulbFill/>Ideas</li>
-                    <li>< ImUsers/> Contacts</li>
-                    <li>< ImUserTie/> Agents</li>
-                    <li>< IoIosJournal/>Articles</li>
+                    <li><Link to={routes.tickets}>< IoTicket/>Tickets</Link></li>
+                    <li><Link to={routes.ideas}>< BsLightbulbFill/>Ideas</Link></li>
+                    <li><Link to={routes.contacts}>< ImUsers/> Contacts</Link></li>
+                    <li><Link to={routes.agents}>< ImUserTie/> Agents</Link></li>
+                    <li><Link to={routes.articles}>< IoIosJournal/>Articles</Link></li>
                 </ul>
                 <div className={classes.lane}></div>
                 <ul>
-                    <li>< IoIosSettings/>Settings</li>
-                    <li>< IoMdMedal/>Subscriptions</li>
+                    <li><Link to={routes.settings}>< IoIosSettings/>Settings</Link></li>
+                    <li><Link to={routes.subscriptions}>< IoMdMedal/>Subscriptions</Link></li>
                 </ul>
             </div>
         </nav>
