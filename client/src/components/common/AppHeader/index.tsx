@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import useFirebaseUser from "../../../ hooks/Firebase/firebaseUser";
 import classes from "./styles.module.scss";
 import {useFirebaseAuth} from "../../../ hooks/Firebase";
@@ -6,10 +6,6 @@ import {useFirebaseAuth} from "../../../ hooks/Firebase";
 export const AppHeader = () => {
     const {user} = useFirebaseUser()
     const {signOutFirebase} = useFirebaseAuth();
-
-    useEffect(() => {
-        console.log("user", user)
-    }, [])
 
     return (
         <header className={classes.root}>
