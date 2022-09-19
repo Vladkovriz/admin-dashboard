@@ -3,12 +3,12 @@ export const routes = {
     overview: "/overview",
     profile: {
         root: "/profile",
-        edit: "/profile/edit",
+        edit: "/edit",
     },
     auth: {
-        root: "/auth",
-        login: "/auth/login",
-        registration: "/auth/registration",
-        refreshPassword: "/auth/refresh-password"
+        root: "/auth/*",
+        login: "login",
+        registration: "registration",
+        refreshPassword: "refresh-password"
     },
 }
