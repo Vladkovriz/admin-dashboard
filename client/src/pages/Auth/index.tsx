@@ -6,7 +6,7 @@ export const Auth = () => {
     return <div className={classes.root}>
         <div className={classes.container}>
             <Outlet/>
-
+            <div className={classes.qwe}>HI</div>
         </div>
     </div>
 }
