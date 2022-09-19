@@ -20,9 +20,6 @@ export const useFirebaseAuth = (): IFirebaseAuthProp => {
             const provider = new GoogleAuthProvider();
 
             const signInResult = await signInWithPopup(auth, provider);
-            console.log("signInResult", signInResult)
-            // const firebaseAccessToken = await getFirebaseToken(signInResult.user);
-            // return firebaseAccessToken;
         } catch (error) {
             console.error(error);
         } finally {

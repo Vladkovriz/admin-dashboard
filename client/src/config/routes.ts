@@ -2,12 +2,12 @@ export const routes = {
     dashboard: "/",
     profile: {
         root: "/profile",
-        edit: "/profile/edit",
+        edit: "/edit",
     },
     auth: {
-        root: "/auth",
-        login: "/auth/login",
-        registration: "/auth/registration",
-        refreshPassword: "/auth/refresh-password"
+        root: "/auth/*",
+        login: "login",
+        registration: "registration",
+        refreshPassword: "refresh-password"
     },
 }
