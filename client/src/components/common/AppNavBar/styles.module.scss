@@ -22,7 +22,7 @@
 .navList {
   display: flex;
   flex-direction: column;
-  color: rgb(131, 123, 123);
+  
   font-family: Mulish;
 
   ul {
@@ -37,9 +37,15 @@
     font-size: 20px;
     padding: 15px 0 15px 30px;
     
+    a{
+      text-decoration:none;
+      color: rgb(131, 123, 123);
+    }
   }
   li:hover{
-    color:  rgb(180, 175, 175);
+    a{
+      color:  rgb(180, 175, 175);
+    }
   }
 }
 svg{
