@@ -1,0 +1,31 @@
+.root {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+
+    &:hover {
+        a {
+            color: rgb(180, 175, 175);
+        }
+    }
+
+    svg {
+        padding-right: 10px;
+    }
+}
+
+.link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(131, 123, 123);
+    padding: 15px 0 15px 30px;
+}
+
+.isActive {
+    background-color: grey;
+    color: #DDE2FF;
+    border-left: 4px solid #DDE2FF;
+}
