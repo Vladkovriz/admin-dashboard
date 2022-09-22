@@ -3,14 +3,16 @@ import classes from "./styles.module.scss"
 
 interface ISocialBtn {
     icon: any;
-    onClick: () => void;
-    classes: {
+    trigger: () => void;
+    classes?: {
         [key: string]: string;
     }
 }
 
-export const SocialBtn = ({}: any) => {
+export const SocialBtn = ({icon, trigger}: ISocialBtn) => {
     return (<div className={classes.root}>
-        <button>SocialBtn</button>
+        <button onClick={trigger} className={classes.btn}>
+            <img src={icon} alt="" className={classes.icon}/>
+        </button>
     </div>)
 }
